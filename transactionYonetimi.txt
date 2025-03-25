@@ -1,0 +1,4 @@
+    Transaction yönetimi için Saga pattern(Kareografi kullandım). Subscription servisinde subscription yapıldıktan sonra
+payment servise event geliyor. Daha sonra payment servisi succes ya da fail olması durumunda farklı eventler atıyor.
+Subscription servisi tekrar bu eventleri dinleyerek üyeliği başlatıyor (ACTIVE) ya da fail olma durumunda üyeliği
+INACTIVE yapıyor. 
